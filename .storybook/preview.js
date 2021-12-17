@@ -1,3 +1,9 @@
+import React from 'react';
+import Theme from '../src/themes';
+import {addDecorator} from '@storybook/react';
+
+addDecorator(Theme);
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
