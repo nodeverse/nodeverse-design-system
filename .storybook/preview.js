@@ -1,8 +1,8 @@
-import React from 'react';
-import Theme from '../src/themes';
-import {addDecorator} from '@storybook/react';
+import React from "react";
+import { Theme } from "../src/themes";
+import { addDecorator } from "@storybook/react";
 
-addDecorator(Theme);
+addDecorator((storyFn) => <Theme>{storyFn()}</Theme>);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -12,4 +12,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
