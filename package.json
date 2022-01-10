@@ -30,9 +30,11 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-url": "^6.1.0",
     "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-controls": "^6.4.10",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
     "@storybook/react": "^6.4.9",

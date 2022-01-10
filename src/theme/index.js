@@ -7,6 +7,9 @@ import PoppinsMedium from "../assets/fonts/poppins-500.woff2";
 import PoppinsRegular from "../assets/fonts/poppins-300.woff2";
 import PoppinsThin from "../assets/fonts/poppins-200.woff2";
 
+import { THEME_COLORS } from "./tokens/colors";
+import { Button } from "./components/button.defaults";
+
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: "Poppins";
@@ -45,6 +48,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: "Poppins";
+    box-sizing: border-box;
   }
 `;
 
@@ -53,29 +57,11 @@ export const DARK_THEME = {};
 export const LIGHT_THEME = {};
 
 export const THEME = {
-  button: {
-    size: {
-      // size: button-height
-      lg: "5rem",
-      md: "4rem",
-      sm: "3rem",
-    },
-    font: {
-      // Size: [ line-height, font-size ]
-      lg: ["3rem", "2rem"],
-      md: ["2rem", "1.8rem"],
-      sm: ["2rem", "1.5rem"],
-    },
-    icon: {
-      // size: [ icon-container-height, icon-container-padding ]
-      lg: ["3rem", "0.5rem"],
-      md: ["2rem", "0.25rem"],
-      sm: ["1.5rem", "0.1rem"],
-    },
-  },
+  colors: { ...THEME_COLORS },
+  button: { ...Button },
 };
 
-export const Theme = ({ children }) => {
+export const NodeverseThemeProvider = ({ children }) => {
   const [darkTheme, setDarkTheme] = useState(true);
 
   const toggleTheme = () => {

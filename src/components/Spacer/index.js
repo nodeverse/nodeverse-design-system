@@ -1,22 +1,39 @@
 /**
- * Spacer - 
+ * Spacer -
  *  Default Width and Height - 1rem
  */
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+
+import { getMargins } from "./Spacer.utils";
 
 const SpacerStyles = styled.div`
-  height: 1rem;
-  width: 1rem;
+  background-color: transparent;
 
-  background-color:transparent;
-
-  ${(props) => props.x !== undefined && `width: ${props.x}rem;` }
-  ${(props) => props.y !== undefined && `height: ${props.y}rem;` }
+  ${(props) =>
+    props.hasChildren
+      ? `margin: ${getMargins(props)};`
+      : `height: ${typeof props.y === "number" ? props.y : 1}rem;
+          width: ${typeof props.x === "number" ? props.x : 1}rem;`}
 `;
 
 export const Spacer = (props) => {
   return (
-    <SpacerStyles {...props} />
+    <SpacerStyles {...props} hasChildren={!!props.children}>
+      {props.children}
+    </SpacerStyles>
   );
+};
+
+Spacer.default = {};
+
+Spacer.propTypes = {
+  xy: PropTypes.number,
+  x: PropTypes.number,
+  y: PropTypes.number,
+  t: PropTypes.number,
+  r: PropTypes.number,
+  b: PropTypes.number,
+  l: PropTypes.number,
 };
