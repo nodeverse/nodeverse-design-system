@@ -4,7 +4,6 @@ import * as Styles from "./Button.styles";
 
 // Components
 import { Spacer } from "../Spacer";
-import { Icon } from "../Icon";
 
 /**
  *
@@ -12,7 +11,12 @@ import { Icon } from "../Icon";
  * @param {string} leftIcon - Left Icon
  * @param {string} rightIcon - Right Icon
  * @param {string} theme - Theme Color decides states of the button
+ * @param {string} size - Sizes of the button
+ * @param {string} variant - Primary and Secondary
+ * @param {function} onClick - Button click functionality
+ * @param {boolean} loading - Button loading state
  *
+ * @returns button
  */
 export const Button = ({
   title,
@@ -65,8 +69,8 @@ Button.propTypes = {
   title: PropTypes.string,
   leftIcon: PropTypes.object,
   rightIcon: PropTypes.object,
-  theme: PropTypes.string,
-  size: PropTypes.oneOf(["lg", "rg", "sm"]),
+  theme: PropTypes.oneOf(["GREY", "RED", "AQUA", "GREEN", "YELLOW"]),
+  size: PropTypes.oneOf(["lg", "rg", "sm", "xs"]),
   onClick: PropTypes.func.isRequired,
   loading: PropTypes.bool,
 };

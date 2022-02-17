@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
 
   cursor: pointer;
 
-  padding: 2rem;
+  padding: ${(props) => props.theme.button[props.size].padding}rem;
   height: ${(props) => props.theme.button[props.size].height}rem;
 
   box-sizing: border-box;
