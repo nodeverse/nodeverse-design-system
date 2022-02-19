@@ -1,5 +1,6 @@
 import React from "react";
 import { NodeverseThemeProvider } from "../src/theme";
+import { addDecorator } from "@storybook/react"; // <- or your storybook framework
 
 export const parameters = {
   controls: {
@@ -19,10 +20,15 @@ export const parameters = {
     // by default this is false
     hideEmpty: true,
   },
+  layout: "centered",
 };
 
-const withThemeProvider = (storyFn) => (
-  <NodeverseThemeProvider>{storyFn()}</NodeverseThemeProvider>
-);
-
-export const decorators = [withThemeProvider];
+export const decorators = [
+  (Story) => (
+    <NodeverseThemeProvider>
+      <div style={{ width: "100%", height: "100%", backgroundColors: "#000" }}>
+        <Story />
+      </div>
+    </NodeverseThemeProvider>
+  ),
+];

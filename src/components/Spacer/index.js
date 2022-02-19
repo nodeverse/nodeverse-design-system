@@ -26,7 +26,7 @@ export const Spacer = (props) => {
   );
 };
 
-Spacer.default = {};
+Spacer.defaultProps = {};
 
 Spacer.propTypes = {
   xy: PropTypes.number,

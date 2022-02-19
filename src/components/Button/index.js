@@ -69,7 +69,7 @@ Button.propTypes = {
   title: PropTypes.string,
   leftIcon: PropTypes.object,
   rightIcon: PropTypes.object,
-  theme: PropTypes.oneOf(["GREY", "RED", "AQUA", "GREEN", "YELLOW"]),
+  theme: PropTypes.oneOf(["GREY", "red", "AQUA", "GREEN", "YELLOW"]),
   size: PropTypes.oneOf(["lg", "rg", "sm", "xs"]),
   onClick: PropTypes.func.isRequired,
   loading: PropTypes.bool,
