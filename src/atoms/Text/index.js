@@ -44,7 +44,7 @@ const styles = {
   },
   ellipsis: ({ maxLines }) => {
     if (maxLines) {
-      return "...";
+      return '"..."';
     }
     return "";
   },
@@ -59,16 +59,16 @@ export const Text = styled.div`
   text-decoration: ${styles.textDecoration};
   text-align: ${(props) => props.align};
   letter-spacing: ${(props) =>
-    props.theme.fonts.letterSpacing[props.letterSpacing]};
+    props.theme.fonts.letterSpacing[props.letterSpacing]}rem;
   overflow: ${styles.overflow};
   text-overflow: ${styles.textOverflow};
   max-height: ${styles.maxHeight};
   position: relative;
-  &&:after {
+  &::after {
     content: ${styles.ellipsis};
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0rem;
   }
 `;
 
