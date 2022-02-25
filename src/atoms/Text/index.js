@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import fonts from "../../tokens/fonts";
 import { getColor } from "../../helpers/utils";
 
-const styles = {
+export const styles = {
   color: ({ theme, color, variant }) => getColor(theme, color, variant),
   textDecoration: ({ decoration }) => {
     if (decoration) {
@@ -50,7 +50,7 @@ const styles = {
   },
 };
 
-export const Text = styled.div`
+export const defaultTextStyles = css`
   font-family: ${(props) => props.family};
   font-weight: ${(props) => props.theme.fonts.weight[props.weight]};
   font-size: ${(props) => props.theme.fonts.size[props.size]}rem;
@@ -70,6 +70,10 @@ export const Text = styled.div`
     bottom: 0;
     right: 0rem;
   }
+`;
+
+export const Text = styled.div`
+  ${defaultTextStyles}
 `;
 
 Text.defaultProps = {

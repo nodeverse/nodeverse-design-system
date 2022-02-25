@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text } from ".";
+import { Text, H1 } from ".";
 import { Spacer } from "../Spacer";
 
 export default {
@@ -304,3 +304,4 @@ export const MaxLines = (args) => (
     </Text>
   </Spacer>
 );
+
