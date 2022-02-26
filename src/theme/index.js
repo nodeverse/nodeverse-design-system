@@ -58,7 +58,7 @@ export const NodeverseThemeProvider = ({ children }) => {
     ...LightTheme,
     currentTheme: "LIGHT",
   });
-  const [currentTheme, _setCurrentTheme] = useState("LIGHT");
+  const [currentTheme, _setCurrentTheme] = useState("DARK");
 
   const toggleTheme = () => {
     if (currentTheme === "LIGHT") {
@@ -96,7 +96,7 @@ export const NodeverseThemeProvider = ({ children }) => {
   }, [currentTheme]);
 
   return (
-    <ThemeProvider theme={{ ...themeObject }} toggleTheme={toggleTheme}>
+    <ThemeProvider theme={{ ...themeObject, toggleTheme }}>
       <GlobalStyles />
       {children}
     </ThemeProvider>

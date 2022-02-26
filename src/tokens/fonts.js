@@ -1,4 +1,4 @@
-const fonts = {
+export const fonts = {
   family: {
     poppins: {
       light: "Poppins-Light",
@@ -11,30 +11,30 @@ const fonts = {
     },
   },
   size: {
-    micro: 1.602,
-    small: 1.802,
-    base: 2.027,
-    medium: 2.281,
-    large: 2.566,
-    xlarge: 2.887,
-    xxlarge: 3.247,
-    header3: 3.653,
-    header2: 4.11,
-    header1: 4.624,
-    header: 5.202,
+    mi: 1.602,
+    sm: 1.802,
+    rg: 2.027,
+    md: 2.281,
+    lg: 2.566,
+    xl: 2.887,
+    xxl: 3.247,
+    h3: 3.653,
+    h2: 4.11,
+    h1: 4.624,
+    h: 5.202,
   },
   lineHeight: {
-    micro: 3,
-    small: 3,
-    base: 3,
-    medium: 4,
-    large: 4,
-    xlarge: 4,
-    xxlarge: 5,
-    header3: 6,
-    header2: 6,
-    header1: 7,
-    header: 8,
+    mi: 3,
+    sm: 3,
+    rg: 3,
+    md: 4,
+    lg: 4,
+    xl: 4,
+    xxl: 5,
+    h3: 6,
+    h2: 6,
+    h1: 7,
+    h: 8,
   },
   weight: {
     light: "300",
@@ -50,5 +50,3 @@ const fonts = {
     4: 3,
   },
 };
-
-export default fonts;

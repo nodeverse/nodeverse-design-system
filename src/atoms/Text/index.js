@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import fonts from "../../tokens/fonts";
+import { fonts, colors } from "../../tokens";
 import { getColor } from "../../helpers/utils";
 
 export const styles = {
-  color: ({ theme, color, variant }) => getColor(theme, color, variant),
+  color: ({ theme, color, variant }) => getColor({ theme, color, variant }),
   textDecoration: ({ decoration }) => {
     if (decoration) {
       if (decoration === "_") {
@@ -72,24 +72,52 @@ export const defaultTextStyles = css`
   }
 `;
 
-export const Text = styled.div`
+export const StyledText = styled.div`
   ${defaultTextStyles}
 `;
+
+export const Text = (props) => <StyledText {...props} />;
 
 Text.defaultProps = {
   family: "poppins",
   weight: "regular",
-  size: "base",
+  size: "rg",
   decoration: "none",
   align: "left",
   letterSpacing: 0,
+  color: "grey",
+  variant: 0,
 };
 
 Text.propTypes = {
-  family: PropTypes.oneOf(Object.keys(fonts.family)),
-  weight: PropTypes.oneOf(Object.keys(fonts.weight)),
-  size: PropTypes.oneOf(Object.keys(fonts.size)),
-  lineHeight: PropTypes.oneOf(Object.keys(fonts.lineHeight)),
+  family: PropTypes.oneOf(["poppins", "cutiveMono"]),
+  weight: PropTypes.oneOf(["light", "regular", "medium", "bold"]),
+  size: PropTypes.oneOf([
+    "mi",
+    "sm",
+    "rg",
+    "md",
+    "lg",
+    "xl",
+    "xxl",
+    "h3",
+    "h2",
+    "h1",
+    "h",
+  ]),
+  lineHeight: PropTypes.oneOf([
+    "mi",
+    "sm",
+    "rg",
+    "md",
+    "lg",
+    "xl",
+    "xxl",
+    "h3",
+    "h2",
+    "h1",
+    "h",
+  ]),
   decoration: PropTypes.oneOf(["_", "-", "none"]),
   align: PropTypes.oneOf([
     "left",
@@ -101,4 +129,6 @@ Text.propTypes = {
   ]),
   letterSpacing: PropTypes.number,
   maxLines: PropTypes.number,
+  color: PropTypes.oneOf(["red", "yellow", "aqua", "green", "grey", "neutral"]),
+  variant: PropTypes.oneOf([0, 1, 2, 3]),
 };

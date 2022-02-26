@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text, H1 } from ".";
+import { Text } from ".";
 import { Spacer } from "../Spacer";
 
 export default {
@@ -25,57 +25,57 @@ Template.args = {};
 
 export const Sizes = (args) => (
   <Spacer x={20}>
-    <Text {...args} size="micro">
+    <Text {...args} size="mi">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"small"}>
+    <Text {...args} size={"sm"}>
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
       aliquip ex ea commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"base"}>
+    <Text {...args} size={"rg"}>
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
       dolore eu fugiat nulla pariatur.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"medium"}>
+    <Text {...args} size={"md"}>
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
       deserunt mollit anim id est laborum.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size="large">
+    <Text {...args} size="lg">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"xlarge"}>
+    <Text {...args} size={"xl"}>
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
       aliquip ex ea commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"xxlarge"}>
+    <Text {...args} size={"xxl"}>
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
       dolore eu fugiat nulla pariatur.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"header3"}>
+    <Text {...args} size={"h3"}>
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
       deserunt mollit anim id est laborum.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"header2"}>
+    <Text {...args} size={"h2"}>
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
       aliquip ex ea commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"header1"}>
+    <Text {...args} size={"h1"}>
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
       dolore eu fugiat nulla pariatur.
     </Text>
     <Spacer y={5} />
-    <Text {...args} size={"header"}>
+    <Text {...args} size={"h"}>
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
       deserunt mollit anim id est laborum.
     </Text>
@@ -108,77 +108,77 @@ export const Weights = (args) => (
 
 export const LineHeights = (args) => (
   <Spacer x={20}>
-    <Text {...args} lineHeight={"micro"}>
+    <Text {...args} lineHeight={"mi"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"small"}>
+    <Text {...args} lineHeight={"sm"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"base"}>
+    <Text {...args} lineHeight={"rg"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"medium"}>
+    <Text {...args} lineHeight={"md"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"large"}>
+    <Text {...args} lineHeight={"lg"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"xlarge"}>
+    <Text {...args} lineHeight={"xl"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"xxlarge"}>
+    <Text {...args} lineHeight={"xxl"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"header3"}>
+    <Text {...args} lineHeight={"h3"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"header2"}>
+    <Text {...args} lineHeight={"h2"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"header1"}>
+    <Text {...args} lineHeight={"h1"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     </Text>
     <Spacer y={5} />
-    <Text {...args} lineHeight={"header"}>
+    <Text {...args} lineHeight={"h"}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -304,4 +304,3 @@ export const MaxLines = (args) => (
     </Text>
   </Spacer>
 );
-

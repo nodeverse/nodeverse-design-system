@@ -24,17 +24,17 @@ const Template = (args, element) => {
 export const Header1 = (args) => Template(args, Text);
 Header1.args = {
   as: "h1",
-  size: "header1",
+  size: "h1",
 };
 
 export const Header2 = (args) => Template(args, Text);
 Header2.args = {
   as: "h2",
-  size: "header2",
+  size: "h2",
 };
 
 export const Header3 = (args) => Template(args, Text);
 Header3.args = {
   as: "h3",
-  size: "header3",
+  size: "h3",
 };

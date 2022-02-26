@@ -1,6 +1,8 @@
 import React from "react";
 import { NodeverseThemeProvider } from "../src/theme";
 import { addDecorator } from "@storybook/react"; // <- or your storybook framework
+import { StoryContainer } from "../src/stories/StoryContainer";
+import { Header } from "../src/stories/Header";
 
 export const parameters = {
   controls: {
@@ -26,9 +28,10 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <NodeverseThemeProvider>
-      <div style={{ width: "100%", height: "100%", backgroundColors: "#000" }}>
+      <StoryContainer>
+        <Header />
         <Story />
-      </div>
+      </StoryContainer>
     </NodeverseThemeProvider>
   ),
 ];
