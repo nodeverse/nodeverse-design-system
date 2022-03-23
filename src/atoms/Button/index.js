@@ -6,6 +6,8 @@ import { Spacer } from "../Spacer";
 import { getColor } from "../../helpers/utils";
 import { Text } from "../Text";
 
+import { RightArrow } from "../../assets/icons/right_arrow";
+
 /**
  * Button heights
  * - Three button sizes
@@ -89,8 +91,15 @@ const StyledButton = styled.button`
  */
 export const Button = (props) => (
   <StyledButton {...props}>
+    {/* <img src={RightArrow} width="20px" style={{ color: "black" }} /> */}
+    {/* <RightArrow
+      fill={getColor({
+        color: props.color,
+        variant: 3,
+      })}
+    /> */}
     <Spacer />
-    <Text color={props.color} size={props.size}>
+    <Text color={props.color} size={props.size} weight="medium">
       {props.title}
     </Text>
     <Spacer />
