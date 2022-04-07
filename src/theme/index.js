@@ -58,7 +58,7 @@ export const NodeverseThemeProvider = ({ children }) => {
     ...LightTheme,
     currentTheme: "LIGHT",
   });
-  const [currentTheme, _setCurrentTheme] = useState("DARK");
+  const [currentTheme, _setCurrentTheme] = useState("LIGHT");
 
   const toggleTheme = () => {
     if (currentTheme === "LIGHT") {
