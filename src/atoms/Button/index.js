@@ -6,28 +6,6 @@ import { Spacer } from "../Spacer";
 import { getColor } from "../../helpers/utils";
 import { Text } from "../Text";
 
-import { RightArrow } from "../../assets/icons/right_arrow";
-
-/**
- * Button heights
- * - Three button sizes
- *  - xs | rg | md | lg
- */
-const ButtonStyles = {
-  sm: {
-    h: 3,
-  },
-  rg: {
-    h: 4,
-  },
-  md: {
-    h: 5,
-  },
-  lg: {
-    h: 6,
-  },
-};
-
 const styles = {
   getBorder: ({ theme, variant, color }) => {
     const borderColor = getColor({ theme: theme, color: color, variant: 0 });
@@ -70,10 +48,10 @@ const StyledButton = styled.button`
 
   cursor: pointer;
 
-  height: ${(props) => ButtonStyles[props.size].h}rem;
+  height: ${(props) => props.theme.buttons[props.size].h}rem;
   width: ${(props) => (props.fill ? "100%" : "min-width")};
 
-  border-radius: ${(props) => ButtonStyles[props.size].h}rem;
+  border-radius: ${(props) => props.theme.buttons[props.size].h}rem;
   border: ${styles.getBorder};
 
   background: ${styles.getBackground};

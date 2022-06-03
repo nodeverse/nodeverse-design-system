@@ -1,9 +1,13 @@
 import { fonts } from "./fonts";
 import { LightThemeColors, DarkThemeColors, colors } from "./colors";
+import { buttons } from "./buttons";
+import { icons } from "./icons";
 
 const BaseTheme = {
   fonts,
   colors,
+  buttons,
+  icons,
 };
 
 const LightTheme = {

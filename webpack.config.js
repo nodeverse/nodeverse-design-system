@@ -28,6 +28,18 @@ module.exports = {
         test: /\.woff2/,
         type: "javascript/auto",
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        dependency: { not: ["url"] },
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
     ],
   },
 };

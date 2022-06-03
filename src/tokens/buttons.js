@@ -1,7 +1,14 @@
 export const buttons = {
-  h: {
-    sm: "3",
-    rg: "4",
-    lg: "5",
+  sm: {
+    h: 3,
+  },
+  rg: {
+    h: 4,
+  },
+  md: {
+    h: 5,
+  },
+  lg: {
+    h: 6,
   },
 };
